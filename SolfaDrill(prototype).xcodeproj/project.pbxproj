@@ -11,6 +11,17 @@
 		ACA2A3752A2AA56C00A7DDBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2A3742A2AA56C00A7DDBD /* ContentView.swift */; };
 		ACA2A3772A2AA56D00A7DDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3762A2AA56D00A7DDBD /* Assets.xcassets */; };
 		ACA2A37A2A2AA56D00A7DDBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3792A2AA56D00A7DDBD /* Preview Assets.xcassets */; };
+		ACA2A38B2A2AAA6200A7DDBD /* Tuning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3812A2AAA6200A7DDBD /* Tuning.mp3 */; };
+		ACA2A38C2A2AAA6200A7DDBD /* G.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3822A2AAA6200A7DDBD /* G.mp3 */; };
+		ACA2A38D2A2AAA6200A7DDBD /* C.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3832A2AAA6200A7DDBD /* C.mp3 */; };
+		ACA2A38E2A2AAA6200A7DDBD /* D.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3842A2AAA6200A7DDBD /* D.mp3 */; };
+		ACA2A38F2A2AAA6200A7DDBD /* TuningFast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3852A2AAA6200A7DDBD /* TuningFast.mp3 */; };
+		ACA2A3902A2AAA6200A7DDBD /* B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3862A2AAA6200A7DDBD /* B.mp3 */; };
+		ACA2A3912A2AAA6200A7DDBD /* A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3872A2AAA6200A7DDBD /* A.mp3 */; };
+		ACA2A3922A2AAA6200A7DDBD /* E.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3882A2AAA6200A7DDBD /* E.mp3 */; };
+		ACA2A3932A2AAA6200A7DDBD /* F.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3892A2AAA6200A7DDBD /* F.mp3 */; };
+		ACA2A3942A2AAA6200A7DDBD /* Chigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A38A2A2AAA6200A7DDBD /* Chigh.mp3 */; };
+		ACA2A3962A2AAC4300A7DDBD /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2A3952A2AAC4300A7DDBD /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,17 @@
 		ACA2A3742A2AA56C00A7DDBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACA2A3762A2AA56D00A7DDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA2A3792A2AA56D00A7DDBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACA2A3812A2AAA6200A7DDBD /* Tuning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Tuning.mp3; path = Solfaapp/Tuning.mp3; sourceTree = SOURCE_ROOT; };
+		ACA2A3822A2AAA6200A7DDBD /* G.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = G.mp3; path = Solfaapp/G.mp3; sourceTree = SOURCE_ROOT; };
+		ACA2A3832A2AAA6200A7DDBD /* C.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = C.mp3; path = Solfaapp/C.mp3; sourceTree = SOURCE_ROOT; };
+		ACA2A3842A2AAA6200A7DDBD /* D.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = D.mp3; path = Solfaapp/D.mp3; sourceTree = SOURCE_ROOT; };
+		ACA2A3852A2AAA6200A7DDBD /* TuningFast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = TuningFast.mp3; path = Solfaapp/TuningFast.mp3; sourceTree = SOURCE_ROOT; };
+		ACA2A3862A2AAA6200A7DDBD /* B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = B.mp3; path = Solfaapp/B.mp3; sourceTree = SOURCE_ROOT; };
+		ACA2A3872A2AAA6200A7DDBD /* A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = A.mp3; path = Solfaapp/A.mp3; sourceTree = SOURCE_ROOT; };
+		ACA2A3882A2AAA6200A7DDBD /* E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = E.mp3; path = Solfaapp/E.mp3; sourceTree = SOURCE_ROOT; };
+		ACA2A3892A2AAA6200A7DDBD /* F.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = F.mp3; path = Solfaapp/F.mp3; sourceTree = SOURCE_ROOT; };
+		ACA2A38A2A2AAA6200A7DDBD /* Chigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Chigh.mp3; path = Solfaapp/Chigh.mp3; sourceTree = SOURCE_ROOT; };
+		ACA2A3952A2AAC4300A7DDBD /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +73,7 @@
 		ACA2A3712A2AA56C00A7DDBD /* SolfaDrill(prototype) */ = {
 			isa = PBXGroup;
 			children = (
+				ACA2A3802A2AA9FA00A7DDBD /* Sounds */,
 				ACA2A3722A2AA56C00A7DDBD /* SolfaDrill_prototype_App.swift */,
 				ACA2A3742A2AA56C00A7DDBD /* ContentView.swift */,
 				ACA2A3762A2AA56D00A7DDBD /* Assets.xcassets */,
@@ -65,6 +88,24 @@
 				ACA2A3792A2AA56D00A7DDBD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACA2A3802A2AA9FA00A7DDBD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				ACA2A3952A2AAC4300A7DDBD /* PlaySound.swift */,
+				ACA2A3872A2AAA6200A7DDBD /* A.mp3 */,
+				ACA2A3862A2AAA6200A7DDBD /* B.mp3 */,
+				ACA2A3832A2AAA6200A7DDBD /* C.mp3 */,
+				ACA2A38A2A2AAA6200A7DDBD /* Chigh.mp3 */,
+				ACA2A3842A2AAA6200A7DDBD /* D.mp3 */,
+				ACA2A3882A2AAA6200A7DDBD /* E.mp3 */,
+				ACA2A3892A2AAA6200A7DDBD /* F.mp3 */,
+				ACA2A3822A2AAA6200A7DDBD /* G.mp3 */,
+				ACA2A3812A2AAA6200A7DDBD /* Tuning.mp3 */,
+				ACA2A3852A2AAA6200A7DDBD /* TuningFast.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +166,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA2A3932A2AAA6200A7DDBD /* F.mp3 in Resources */,
+				ACA2A38B2A2AAA6200A7DDBD /* Tuning.mp3 in Resources */,
 				ACA2A37A2A2AA56D00A7DDBD /* Preview Assets.xcassets in Resources */,
+				ACA2A38C2A2AAA6200A7DDBD /* G.mp3 in Resources */,
+				ACA2A38E2A2AAA6200A7DDBD /* D.mp3 in Resources */,
+				ACA2A3922A2AAA6200A7DDBD /* E.mp3 in Resources */,
+				ACA2A38D2A2AAA6200A7DDBD /* C.mp3 in Resources */,
+				ACA2A3902A2AAA6200A7DDBD /* B.mp3 in Resources */,
+				ACA2A3912A2AAA6200A7DDBD /* A.mp3 in Resources */,
+				ACA2A38F2A2AAA6200A7DDBD /* TuningFast.mp3 in Resources */,
+				ACA2A3942A2AAA6200A7DDBD /* Chigh.mp3 in Resources */,
 				ACA2A3772A2AA56D00A7DDBD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA2A3752A2AA56C00A7DDBD /* ContentView.swift in Sources */,
+				ACA2A3962A2AAC4300A7DDBD /* PlaySound.swift in Sources */,
 				ACA2A3732A2AA56C00A7DDBD /* SolfaDrill_prototype_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
