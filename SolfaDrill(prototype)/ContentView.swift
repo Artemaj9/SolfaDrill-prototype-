@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let backgroundGradient = LinearGradient ( colors: [Color.purple, Color.blue], startPoint: .center, endPoint: .top)
+let backgroundGradient = LinearGradient ( colors: [Color.purple,Color.blue], startPoint: .center, endPoint: .top)
 
 
 struct ContentView: View {
@@ -15,44 +15,45 @@ struct ContentView: View {
     @State private var noteValue = 0
     @State private var score = 0
     @State private var attempts = 0
+    @State private var game = false
+    @State private var result = 0
     var body: some View {
-        var note = ["C","D","E","F","G","A","B","Chigh"]
+        let note = ["C","D","E","F","G","A","B","Chigh"]
         ZStack {
             backgroundGradient
                 .ignoresSafeArea()
             VStack(spacing: 20.0) {
                 Group{
                     Button(action: {
-                        //play sound
                         playSound(key: "Tuning")
                     }) {
                         
                         Text("Tunning")
                             .foregroundColor(.white)
                             .font(.system(size: 30))
+                            .opacity(0.7)
                         
                     }
                     Button(action: {
-                        //play sound
                         playSound(key: "C")
-                        attempts += 1
-                        if noteValue == 0 {
+                        if (noteValue == 0) && game {
                             score += 1
                         }
+                        game = false
                     }) {
                         
                         Text("C")
                             .foregroundColor(.white)
                             .font(.system(size: 30))
+                            .opacity(0.7)
                         
                     }
                     Button(action: {
-                        //play sound
                         playSound(key: "D")
-                        attempts += 1
-                        if noteValue == 1 {
+                        if (noteValue == 0) && game {
                             score += 1
                         }
+                        game = false
                         
                     }) {
                         
@@ -63,12 +64,11 @@ struct ContentView: View {
                         
                     }
                     Button(action: {
-                        //play sound
                         playSound(key: "E")
-                        attempts += 1
-                        if noteValue == 2 {
+                        if noteValue == 2  && game {
                             score += 1
                         }
+                        game = false
                     }) {
                         
                         Text("E")
@@ -78,12 +78,11 @@ struct ContentView: View {
                         
                     }
                     Button(action: {
-                        //play sound
                         playSound(key: "F")
-                        attempts += 1
-                        if noteValue == 3 {
+                        if noteValue == 3  && game {
                             score += 1
                         }
+                        game = false
                     }) {
                         
                         Text("F")
@@ -93,12 +92,11 @@ struct ContentView: View {
                         
                     }
                     Button(action: {
-                        //play sound
                         playSound(key: "G")
-                        attempts += 1
-                        if noteValue == 4 {
+                        if noteValue == 4  && game {
                             score += 1
                         }
+                        game = false
                     }) {
                         
                         Text("G")
@@ -110,11 +108,10 @@ struct ContentView: View {
                     Button(action: {
                         //play sound
                         playSound(key: "A")
-                        attempts += 1
-                        if noteValue == 5 {
+                        if noteValue == 5  && game {
                             score += 1
                         }
-                        
+                        game = false
                     }) {
                         
                         Text("A")
@@ -126,10 +123,11 @@ struct ContentView: View {
                     Button(action: {
                         //play sound
                         playSound(key: "B")
-                        attempts += 1
-                        if noteValue == 6 {
+                        alertIsVisible = true
+                        if noteValue == 6  && game {
                             score += 1
                         }
+                        game = false
                     }) {
                         
                         Text("B")
@@ -139,12 +137,11 @@ struct ContentView: View {
                     }
                     
                     Button(action: {
-                        //play sound
                         playSound(key: "Chigh")
-                        attempts += 1
-                        if noteValue == 7 {
+                        if noteValue == 7  && game {
                             score += 1
                         }
+                        game = false
                     }) {
                         
                         Text("C")
@@ -156,6 +153,8 @@ struct ContentView: View {
                     Button(action: {
                         noteValue = Int.random(in: 0...7)
                         playSound(key: note[noteValue])
+                        attempts += 1
+                        game = true
                     }) {
                         
                         Text("PLAY!")
@@ -164,15 +163,37 @@ struct ContentView: View {
                             .opacity(0.7)
                     }
                 }
-                Text("Score: \(String(score))/ \(String(attempts))")
+                Text("Score: \(String(score)) / \(String(attempts))")
                     .font(.system(size: 35))
                     .foregroundColor(.white)
+                
+                Button(action: {
+                    //play sound
+                    alertIsVisible = true
+                }) {
+                    
+                    Text("END GAME")
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .opacity(0.6)
+                }
             }
             .padding()
+           .alert("END GAME!",
+                   isPresented: $alertIsVisible,
+                   actions: {
+                Button("Awesome!") {
+                    attempts = 0
+                    score = 0
+                }
+             
+            })
+                   
         }
     }
- 
+      
 }
+ 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
