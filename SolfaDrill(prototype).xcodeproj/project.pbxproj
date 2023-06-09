@@ -22,7 +22,6 @@
 		ACA2A3932A2AAA6200A7DDBD /* F.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A3892A2AAA6200A7DDBD /* F.mp3 */; };
 		ACA2A3942A2AAA6200A7DDBD /* Chigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACA2A38A2A2AAA6200A7DDBD /* Chigh.mp3 */; };
 		ACA2A3962A2AAC4300A7DDBD /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2A3952A2AAC4300A7DDBD /* PlaySound.swift */; };
-		ACB1971E2A339E3F005F8BCC /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1971D2A339E3F005F8BCC /* Challenge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +41,6 @@
 		ACA2A3892A2AAA6200A7DDBD /* F.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = F.mp3; path = Solfaapp/F.mp3; sourceTree = SOURCE_ROOT; };
 		ACA2A38A2A2AAA6200A7DDBD /* Chigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Chigh.mp3; path = Solfaapp/Chigh.mp3; sourceTree = SOURCE_ROOT; };
 		ACA2A3952A2AAC4300A7DDBD /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
-		ACB1971D2A339E3F005F8BCC /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +73,6 @@
 		ACA2A3712A2AA56C00A7DDBD /* SolfaDrill(prototype) */ = {
 			isa = PBXGroup;
 			children = (
-				ACB1971F2A339E4A005F8BCC /* Model */,
 				ACA2A3802A2AA9FA00A7DDBD /* Sounds */,
 				ACA2A3722A2AA56C00A7DDBD /* SolfaDrill_prototype_App.swift */,
 				ACA2A3742A2AA56C00A7DDBD /* ContentView.swift */,
@@ -109,14 +106,6 @@
 				ACA2A3852A2AAA6200A7DDBD /* TuningFast.mp3 */,
 			);
 			path = Sounds;
-			sourceTree = "<group>";
-		};
-		ACB1971F2A339E4A005F8BCC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				ACB1971D2A339E3F005F8BCC /* Challenge.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +189,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA2A3752A2AA56C00A7DDBD /* ContentView.swift in Sources */,
-				ACB1971E2A339E3F005F8BCC /* Challenge.swift in Sources */,
 				ACA2A3962A2AAC4300A7DDBD /* PlaySound.swift in Sources */,
 				ACA2A3732A2AA56C00A7DDBD /* SolfaDrill_prototype_App.swift in Sources */,
 			);
