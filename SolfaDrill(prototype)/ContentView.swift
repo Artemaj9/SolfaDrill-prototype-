@@ -50,7 +50,7 @@ struct ContentView: View {
                     }
                     Button(action: {
                         playSound(key: "D")
-                        if (noteValue == 0) && game {
+                        if (noteValue == 1) && game {
                             score += 1
                         }
                         game = false
@@ -123,7 +123,6 @@ struct ContentView: View {
                     Button(action: {
                         //play sound
                         playSound(key: "B")
-                        alertIsVisible = true
                         if noteValue == 6  && game {
                             score += 1
                         }
@@ -168,8 +167,11 @@ struct ContentView: View {
                     .foregroundColor(.white)
                 
                 Button(action: {
-                    //play sound
+                    if attempts > 0 {
+                        result = Int(((100*Float(score))/Float(attempts)))
+                    }
                     alertIsVisible = true
+                   
                 }) {
                     
                     Text("END GAME")
@@ -179,10 +181,10 @@ struct ContentView: View {
                 }
             }
             .padding()
-           .alert("END GAME!",
+           .alert("\(result) %",
                    isPresented: $alertIsVisible,
                    actions: {
-                Button("Awesome!") {
+                Button("OK") {
                     attempts = 0
                     score = 0
                 }
